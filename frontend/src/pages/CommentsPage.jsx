@@ -5,9 +5,12 @@ import Comment from "./Comment";
 
 const CommentsPage = ()=>{
     const [allComments,setAllComments] = useState([]);
+    const [isLoading,setIsLoading] = useState(true);
+
     useEffect(()=>{
         const getUser = async()=>{
             const object = await axios.get(`${BACKEND_URL}/comments`);
+            setIsLoading(false);
             setAllComments(object.data);
         }
         getUser();
@@ -102,6 +105,7 @@ const CommentsPage = ()=>{
         <button type="submit" onClick={handleSubmit}> Comment</button>
         <br></br>
 
+        {isLoading ? <p>Loading Page...</p>:<></>}
         {allComments.length === 0 ? (
       <p>No comments yet</p>
     ) : (
