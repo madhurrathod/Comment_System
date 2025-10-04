@@ -1,12 +1,12 @@
-Tech stack used: 
+Note: Since the project is hosted on free version of render it might take some time to load initial comments.
 
-Backend: Node.js, express, prisma 
+#### Tech stack used: 
+1. Backend: Node.js, express, prisma 
+2. Database: MongoDB (Atlas)
+3. FrontEnd: React (Vite + Axios)
+4. Hosting: Render (frontend + backend)
 
-Database: MongoDB (Atlas) 
-
-FrontEnd: React (Vite + Axios) 
-
-Features: 
+#### Features: 
 1. Authentication using JWT and cookies. (Register and Login)
 2. Adding Parent and Child level comments.
 3. Like button.
@@ -30,10 +30,12 @@ Features:
 
 Run the backend server: 
 ```bash
-  npx nodemon``` 
+  npx nodemon
+``` 
 or 
 ```bash
-  npm start``` 
+  npm start
+``` 
 ---
 ### 3. Frontend Setup 
 Open a new terminal window and go into frontend directory: 
