@@ -49,7 +49,9 @@ Open a new terminal window and go into frontend directory:
 #### 1. Frontend 
 Create a .env file in the root of frontend. 
 Add the following line: 
-```VITE_BACKEND_URL="Your localhost backend url"``` 
+```
+VITE_BACKEND_URL="Your localhost backend url"
+``` 
 
 ---
 #### 2. Backend
