@@ -10,8 +10,8 @@ const CommentsPage = ()=>{
     useEffect(()=>{
         const getUser = async()=>{
             const object = await axios.get(`${BACKEND_URL}/comments`);
-            setIsLoading(false);
             setAllComments(object.data);
+            setIsLoading(false);
         }
         getUser();
     },[])
