@@ -1,4 +1,5 @@
 import { useState, memo } from "react";
+import moment from "moment";
 import pic from "../assets/UserProfilePic.png";
 import { BACKEND_URL } from "../utils/constants";
 
@@ -20,6 +21,7 @@ const Comment = memo(({ comment, addComment , likeComment}) => {
      
      <img style={{ width: "40px", height: "40px", borderRadius: "50%" }} src={pic}></img> 
      <p style={{ margin: 0, fontWeight: "bold" }}>{comment.author}</p>
+     <div>{moment(comment.timestamp).fromNow()}</div>
 
      </div>
       <button onClick={() => setShowReplyForm(!showReplyForm)}>
