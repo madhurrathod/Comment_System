@@ -105,14 +105,15 @@ const CommentsPage = ()=>{
         <button type="submit" onClick={handleSubmit}> Comment</button>
         <br></br>
 
-        {isLoading ? <p>Loading Page...</p>:<></>}
-        {allComments.length === 0 ? (
-      <p>No comments yet</p>
-    ) : (
-      allComments.map((comment) => (
-        <Comment key={comment.id} comment={comment} addComment={addComment} likeComment={likeComment} />
-      ))
-    )}
+        {isLoading ? <p>Loading Page...</p>:<>
+          {allComments.length === 0 ? (<p>No comments yet</p>) : 
+          (
+           allComments.map((comment) => (
+           <Comment key={comment.id} comment={comment} addComment={addComment} likeComment={likeComment} />
+          ))
+          )}
+
+        </>}
     </>
 )
 }
