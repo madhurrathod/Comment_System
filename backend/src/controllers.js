@@ -1,7 +1,6 @@
 const {PrismaClient} = require("../generated/prisma")
 const prisma = new PrismaClient();
 
-
 exports.post_comment = async(req,res)=>{   
     const author = req.user.name; 
     const {text,parentId} = req.body;
