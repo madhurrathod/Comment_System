@@ -1,6 +1,9 @@
 Tech stack used: 
+
 Backend: Node.js, express, prisma 
+
 Database: MongoDB (Atlas) 
+
 FrontEnd: React (Vite + Axios) 
 
 Features: 
