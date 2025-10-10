@@ -1,4 +1,4 @@
-Note: Since the project is hosted on free version of render it might take some time to load initial comments.
+Note: Since the project is hosted on free version of render it might take some time (~1min) to load initial comments.
 
 #### Tech stack used: 
 1. Backend: Node.js, express, prisma 
